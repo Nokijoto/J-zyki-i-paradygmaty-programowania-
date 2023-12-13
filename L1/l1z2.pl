@@ -1,0 +1,25 @@
+human(ola).
+human(jola).
+human(tola).
+human(jan).
+human(tom).
+
+
+freeTime(ola,book).
+freeTime(jola,dance).
+freeTime(tola,sing).
+freeTime(jan,bike).
+freeTime(tom,hunt).
+
+
+age(ola,10).
+age(jola,13).
+age(tola,23).
+age(jan,30).
+age(tom,40).
+
+
+whoIsOlder(X,Y):-
+    age(X,Z),
+    age(Y,C),
+    Z>C.
